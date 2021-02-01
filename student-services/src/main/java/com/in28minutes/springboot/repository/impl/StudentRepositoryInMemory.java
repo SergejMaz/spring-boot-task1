@@ -59,4 +59,9 @@ public class StudentRepositoryInMemory implements StudentRepository {
         throw new StudentNotFoundException(studentId);
     }
 
+    @Override
+    public void addStudent(Student student){
+        students.add(student);
+    }
+
 }

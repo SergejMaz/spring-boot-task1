@@ -70,4 +70,15 @@ public class StudentService {
 
         return course;
     }
+
+    public void addStudent(Student newStudent) {
+        //TODO validation
+        if (validateStudent(newStudent)){
+            studentRepository.addStudent(newStudent);
+        }
+    }
+
+    private boolean validateStudent(Student newStudent) {
+        return false;
+    }
 }

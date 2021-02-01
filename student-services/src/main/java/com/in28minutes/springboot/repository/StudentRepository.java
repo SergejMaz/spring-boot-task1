@@ -9,4 +9,6 @@ public interface StudentRepository {
     List<Student> retrieveAllStudents();
 
     Student getStudentByStudentId(String studentId);
+
+    void addStudent(Student student);
 }
